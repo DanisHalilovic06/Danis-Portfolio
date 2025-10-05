@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Danis Halilovic — Web Developer WordPress</title>
+  <meta name="description" content="Portfolio di Danis Halilovic — Sviluppatore web freelance specializzato in siti WordPress per professionisti e PMI." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7;--glass:rgba(255,255,255,0.03);--maxw:1100px;color-scheme:dark;color:#e6eef6;font-family:'Inter',system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+    *{box-sizing:border-box}html,body{height:100%;margin:0;background:linear-gradient(180deg,#071024 0%,var(--bg) 100%);}a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042022}
+    .nav{display:flex;gap:14px;align-items:center}
+    .nav a{padding:8px 10px;border-radius:8px;font-weight:600;color:var(--muted)}.nav a.btn{background:var(--glass);color:var(--accent)}
+    main{margin-top:28px}.hero{display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:center}.intro{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:28px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:28px}p.lead{color:var(--muted);margin-top:10px;line-height:1.6}
+    .cta{margin-top:18px;display:flex;gap:12px}.btn-primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042022;padding:10px 16px;border-radius:10px;font-weight:700;border:none;cursor:pointer}.btn-ghost{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent}
+    .skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .portfolio{margin-top:26px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{border-radius:12px;overflow:hidden;background:#081226;display:flex;flex-direction:column}.project img{width:100%;height:160px;object-fit:cover;display:block}.project .meta{padding:12px}.project h3{margin:0;font-size:16px}.project p{margin:8px 0 0;color:var(--muted);font-size:13px}.project .actions{margin-top:12px;display:flex;gap:8px}.pill{padding:6px 8px;border-radius:8px;font-size:13px;background:rgba(255,255,255,0.02);color:var(--muted)}
+    .two-col{display:grid;grid-template-columns:1fr 420px;gap:18px;margin-top:22px}.about p{color:var(--muted);line-height:1.6}
+    form{display:flex;flex-direction:column;gap:10px}input,textarea{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.04);padding:12px;border-radius:10px;color:inherit;font-family:inherit}.send{display:flex;justify-content:space-between;align-items:center}
+    footer{margin-top:34px;padding:20px 0;color:var(--muted);text-align:center}
+    @media(max-width:980px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}header{flex-direction:column;align-items:flex-start}.nav{order:2}.logo{width:42px;height:42px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DH</div>
+        <div>
+          <div style="font-weight:700">Danis Halilovic</div>
+          <div style="font-size:13px;color:var(--muted)">Web developer • WordPress Specialist</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti" class="btn">Contatti</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="intro card">
+          <h1>Ciao — sono <span style="color:var(--accent)">Danis</span>, realizzo siti WordPress professionali.</h1>
+          <p class="lead">Creo siti vetrina e landing page in WordPress per professionisti e piccole imprese. Velocità, sicurezza e design su misura, con tariffe chiare e risultati concreti.</p>
+          <div class="skills" aria-hidden="false">
+            <div class="skill">WordPress</div>
+            <div class="skill">Elementor</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">SEO base</div>
+            <div class="skill">Ottimizzazione Performance</div>
+          </div>
+          <div class="cta">
+            <a class="btn-primary" href="#contatti">Prenota una call</a>
+            <a class="btn-ghost" href="#portfolio">Vedi progetti</a>
+          </div>
+        </div>
+        <aside class="card" aria-label="Contatti rapidi">
+          <h3 style="margin:0 0 8px 0">Info rapide</h3>
+          <p style="margin:0;color:var(--muted)">Disponibile per freelance remoto • Tariffe a partire da <strong>€400</strong></p>
+          <div style="margin-top:12px"><div style="font-size:13px;color:var(--muted)">Email</div><div style="font-weight:700">danishalilovic06@gmail.com</div></div>
+          <div style="margin-top:12px"><div style="font-size:13px;color:var(--muted)">Location</div><div style="font-weight:700">Italia</div></div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><a class="pill" href="#">LinkedIn</a><a class="pill" href="#">GitHub</a><a class="pill" href="#">Demo</a></div>
+        </aside>
+      </section>
+      <section id="servizi" class="portfolio">
+        <h2 style="margin:0 0 12px 0">Servizi</h2>
+        <div class="grid">
+          <div class="project card"><img src="https://picsum.photos/seed/site1/900/600" alt="Screenshot progetto 1"><div class="meta"><h3>Sito WordPress per professionisti</h3><p>Design responsive, SEO on-page e ottimizzazione performance.</p><div class="actions"><span class="pill">WordPress</span><span class="pill">2 settimane</span></div></div></div>
+          <div class="project card"><img src="https://picsum.photos/seed/site2/900/600" alt="Screenshot progetto 2"><div class="meta"><h3>Landing page in WordPress</h3><p>Focalizzata sulla conversione e facilità di aggiornamento.</p><div class="actions"><span class="pill">WordPress</span><span class="pill">Setup rapido</span></div></div></div>
+          <div class="project card"><img src="https://picsum.photos/seed/site3/900/600" alt="Screenshot progetto 3"><div class="meta"><h3>Restyling sito esistente</h3><p>Aggiornamento di layout e contenuti per siti già online.</p><div class="actions"><span class="pill">WordPress</span><span class="pill">SEO & Design</span></div></div></div>
+        </div>
+      </section>
+      <section class="two-col">
+        <div class="about card">
+          <h2>Chi sono</h2>
+          <p>Sono <strong>Danis Halilovic</strong>, sviluppatore web freelance specializzato in WordPress. Mi occupo di creare siti moderni, responsive e facili da gestire per professionisti e piccole imprese in tutta Italia.</p>
+          <h3 style="margin-top:14px">Processo di lavoro</h3>
+          <ol style="color:var(--muted)"><li>Brief e definizione obiettivi</li><li>Scelta template o design personalizzato</li><li>Sviluppo in WordPress e test</li><li>Lancio e supporto post-live</li></ol>
+          <h3 style="margin-top:14px">Cosa offro</h3>
+          <ul style="color:var(--muted)"><li>Prezzo trasparente a partire da €400</li><li>Siti ottimizzati per SEO e velocità</li><li>Formazione base per la gestione autonoma</li></ul>
+        </div>
+        <aside id="contatti" class="card">
+          <h2>Contattami</h2>
+          <form id="contactForm">
+            <label for="name" style="font-weight:700">Nome</label>
+            <input id="name" name="name" placeholder="Mario Rossi" required>
+            <label for="email" style="font-weight:700">Email</label>
+            <input id="email" name="email" type="email" placeholder="tuo@email.it" required>
+            <label for="message" style="font-weight:700">Messaggio</label>
+            <textarea id="message" name="message" rows="6" placeholder="Breve descrizione del progetto..." required></textarea>
+            <div class="send"><small style="color:var(--muted)">Rispondo in 24-48h</small><div style="display:flex;gap:8px"><button type="button" class="btn-ghost" onclick="resetForm()">Reset</button><button type="submit" class="btn-primary">Invia messaggio</button></div></div>
+          </form>
+          <div style="margin-top:12px;color:var(--muted);font-size:13px">Oppure scrivi direttamente a <a href="mailto:danishalilovic06@gmail.com">danishalilovic06@gmail.com</a></div>
+        </aside>
+      </section>
+      <footer>
+        <div>© <span id="year"></span> Danis Halilovic — Web developer WordPress • <span style="color:var(--muted)">Built with HTML & CSS</span></div>
+      </footer>
+    </main>
+  </div>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    function resetForm(){document.getElementById('contactForm').reset();}
+    document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const n=document.getElementById('name').value.trim(),em=document.getElementById('email').value.trim(),m=document.getElementById('message').value.trim();if(!n||!em||!m){alert('Completa tutti i campi.');return}const s=encodeURIComponent('Richiesta da '+n),b=encodeURIComponent('Nome: '+n+'\nEmail: '+em+'\n\n'+m);window.location.href='mailto:danishalilovic06@gmail.com?subject='+s+'&body='+b;});
+  </script>
+</body>
+</html>
